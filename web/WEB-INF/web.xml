@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>myServlet.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index_servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewArticleServlet</servlet-name>
+        <servlet-class>myServlet.NewArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewArticleServlet</servlet-name>
+        <url-pattern>/new_article_servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewRevisionServlet</servlet-name>
+        <servlet-class>myServlet.NewRevisionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewRevisionServlet</servlet-name>
+        <url-pattern>/new_revision</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewVolume</servlet-name>
+        <servlet-class>myServlet.NewVolumeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewVolume</servlet-name>
+        <url-pattern>/new_volume</url-pattern>
+    </servlet-mapping>
+</web-app>
